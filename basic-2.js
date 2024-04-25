@@ -4,11 +4,43 @@
  * MAyoria de edad en España: 18 o más
  * MAyoria de edad en EEUU: 21 o más
  * 
- * El valor de ocuntry solamente puede ser "España" o "EEUU"
+ * El valor de country solamente puede ser "España" o "EEUU"
  */
 
 function isAdultInCountry(age, country) {
-    return;
+
+    let cumplidaCondicion = false;
+
+    while (!cumplidaCondicion) {
+
+        if (age >= 18, country == "España") {cumplidaCondicion = true};
+
+        else if (age >= 21, country == "EEUU") {cumplidaCondicion = true};
+
+        
+        
+        // continuación de mi ejercicio
+        // if (age <= 21, country == "EEUU") {false}
+        // else {true};
+        // return;
+
+        // andrii:
+        // if (country == "España" && age >= 18) {
+        //     return true;
+        // } else if (country == "EEUU" && age >= 21) {
+        //     return true;
+        // }
+        // return false;
+
+        // balam:
+        // if (country == "EEUU") {
+        //     return age >= 21;
+        // }
+        // else if (country == "España") {
+        //     return age >= 18;
+        // }
+    }
+    
 }
 
 console.log(isAdultInCountry(17, "España")); // false, se espera false porque 17 es menor de 18 años

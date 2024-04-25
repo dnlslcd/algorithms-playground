@@ -6,6 +6,12 @@
  */
 
 function sayHi(name, language) {
+    
+    let greeting;
+
+    if (language )
+    
+    
     return;
 }
 
