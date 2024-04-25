@@ -8,21 +8,15 @@
  */
 
 function isAdultInCountry(age, country) {
-
-    let cumplidaCondicion = false;
-
-    while (!cumplidaCondicion) {
-
-        if (age >= 18, country == "España") {cumplidaCondicion = true};
-
-        else if (age >= 21, country == "EEUU") {cumplidaCondicion = true};
-
+    if (country == "EEUU") {
+        return age >= 21;
+    }
+        else if (country == "España") {
+        return age >= 18;
+    }
+       
         
         
-        // continuación de mi ejercicio
-        // if (age <= 21, country == "EEUU") {false}
-        // else {true};
-        // return;
 
         // andrii:
         // if (country == "España" && age >= 18) {
@@ -33,15 +27,9 @@ function isAdultInCountry(age, country) {
         // return false;
 
         // balam:
-        // if (country == "EEUU") {
-        //     return age >= 21;
-        // }
-        // else if (country == "España") {
-        //     return age >= 18;
-        // }
+        // 
     }
-    
-}
+
 
 console.log(isAdultInCountry(17, "España")); // false, se espera false porque 17 es menor de 18 años
 console.log(isAdultInCountry(18, "España")); // true, se espera true porque 18 es igual a la mayoría de edad en España
